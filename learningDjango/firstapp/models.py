@@ -13,7 +13,7 @@ class Firstapp(models.Model):
     image = models.ImageField(upload_to='firstappimg')
     date_added = models.DateTimeField(default=timezone.now)
     superheros = models.CharField(max_length=10,choices=NAME_TYPE_CHOICE)
-    desc = models.TextField(default='')
+    description = models.TextField(default='')
 
 
     def __str__(self):

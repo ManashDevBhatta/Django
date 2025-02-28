@@ -1,0 +1,17 @@
+{% extends "layout.html" %} 
+{% block title %} 
+First App Detail 
+{% endblock %}
+{% block content %}
+  <div class="mt-4 flex justify-center items-center min-h-screen">
+    <div class="max-w-lg rounded overflow-hidden shadow-lg bg-white">
+      <img style="width: 200px; height: 200px; object-fit: cover;" src="{{ first.image.url }}" alt="{{ first.name }}">
+
+      <div class="px-6 py-4">
+        <h1 class="text-2xl font-semibold text-white">{{ first.name }}</h1>
+        <p class="text-white mt-2 text-base">{{ first.description }}</p>
+      </div>
+
+    </div>
+  </div>
+{% endblock %}
